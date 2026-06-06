@@ -56,3 +56,25 @@ let age = 24;
 */
 const email = 'jessus.https@gmail.com';
 
+/*
+    Cuando escribimos una varible sin colocarle una palabra reservada como
+    var/let/const este se añade al objeto global windows
+*/
+
+addInObjectWindow = 'Se agrega al objeto global windows';
+
+/*
+    1. Las variables declaradas se limitan al contexto de ejecución en el cual son declaradas. Las variables no declaradas
+    siempre son globales.
+*/
+
+function x() {
+  y = 1; // Lanza un error de tipo "ReferenceError" en modo estricto ('use strict')
+  var z = 2;
+}
+
+x();
+
+console.log(y); // Imprime "1"
+console.log(window);
+console.log(z); // Lanza un error de tipo "ReferenceError": z no está definida afuera de x
