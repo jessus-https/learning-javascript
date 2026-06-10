@@ -1,3 +1,11 @@
+
+/*
+    Polyfill
+
+    Es código que provee el funcionamiento de una nueva característica de
+    JavaScript (ES6), en versiones viejas como ES5.
+*/
+
 /*
     Una variable es un contenedor de información que apunta a un lugar en memoria.
 
